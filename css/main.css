@@ -338,7 +338,7 @@ button:focus {
    Scroll To Up 
    ========================================================================== */
 .back-to-top {
-  display: none;
+  display: inline;
   position: fixed;
   bottom: 18px;
   right: 15px;
@@ -355,7 +355,8 @@ button:focus {
 
 .back-to-top i {
   color: #fff;
-  font-size: 20px;
+  padding-top: 9px;
+  font-size: 28px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
