@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/chat.css">
   </head>`
   
   <body>
@@ -49,18 +50,18 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">Serviços</a>
               </li>                            
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link page-scroll" href="#showcase">Showcase</a>
-              </li>       
-              <li class="nav-item">
+              </li>        -->
+              <!-- <li class="nav-item">
                 <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-              </li>     
+              </li>      -->
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Time</a>
               </li> 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link page-scroll" href="#blog">Blog</a>
-              </li>  
+              </li>   -->
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contact">Contato</a>
               </li> 
@@ -646,11 +647,55 @@
 
 
     <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
+    <a id="addClass" class="back-to-top">
       <i class="material-icons">
         chat
       </i>
-    </a> 
+    </a>
+    <div class="popup-box chat-popup" id="qnimate">
+        <div class="popup-head">
+          <div class="popup-head-left pull-left"><img src="img/rex.png" alt="iamgurdeeposahan"> Dev's
+            <div class="popup-head-right float-right">
+              <button data-widget="remove" id="removeClass" class="chat-header-button float-right" type="button"><i class="lni-close"></i></button>
+            </div>
+          </div>
+
+        </div>
+        <div class="popup-messages">
+          <div class="direct-chat-messages">
+            <!-- <div class="chat-box-single-line"> -->
+              <center><abbr class="timestamp">15 de Novembro de 2019</abbr></center>
+            <!-- </div> -->
+            <!-- <div class="direct-chat-msg doted-border"> -->
+              <div class="direct-chat-info clearfix">
+                <span class="direct-chat-name pull-left">Dev's</span>
+              </div>
+        
+              <img alt="message user image" src="img/rex.png" class="direct-chat-img"><!-- /.direct-chat-img -->
+              <div class="direct-chat-text">
+                Olá, em que podemos te ajudar?
+              </div>
+              <div class="direct-chat-info clearfix">
+                <span class="direct-chat-timestamp float-right" style="color:black">15:15</span>
+              </div>
+              <!-- <div class="direct-chat-info clearfix">
+                <span class="direct-chat-img-reply-small pull-left">
+                </span>
+                <span class="direct-chat-reply-name">Singh</span>
+              </div>         -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="popup-messages-footer">
+          <textarea id="status_message" placeholder="Escreva sua mensagem" rows="10" cols="40" name="message"></textarea>
+          <div class="btn-footer">
+              <button class="bg_none"><i class="lni-play"></i></button>
+              <button class="bg_none"><i class="lni-gallery"></i></button>
+              <button class="bg_none"><i class="lni-files"></i></button>
+              <button class="bg_none float-right"><i class="lni-chevron-right-circle"></i></button>
+          </div>
+        </div>
+      </div>
 
     <!-- Preloader -->
     <div id="preloader">
@@ -671,6 +716,17 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
+    <script>
+        $(function(){
+          $("#addClass").click(function () {
+            $('#qnimate').addClass('popup-box-on');
+              });
+          
+            $("#removeClass").click(function () {
+          $('#qnimate').removeClass('popup-box-on');
+            });
+       })
+  </script>
     
   </body>
 </html>

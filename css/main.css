@@ -337,6 +337,16 @@ button:focus {
 /* ========================================================================== 
    Scroll To Up 
    ========================================================================== */
+.button-menssagem{
+  display: inline;
+  position: fixed;
+  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  bottom: 18px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+}
+
 .back-to-top {
   display: inline;
   position: fixed;
