@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -21,7 +21,35 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>`
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/picture.css">
+    <style type="text/css">
+      #mapelli{
+        background-image:url(img/team/04.jpg);    
+      }    
+        #mapelli:hover{
+        background-image:url(img/team/08.png);
+      }
+      #felipe{
+        background-image:url(img/team/01.jpg);    
+      }    
+        #felipe:hover{
+        background-image:url(img/team/05.png);
+      }
+      #jessica{
+        background-image:url(img/team/02.jpg);    
+      }    
+        #jessica:hover{
+        background-image:url(img/team/06.jpeg);
+      }
+      #santi{
+        background-image:url(img/team/03.jpg);    
+      }    
+        #santi:hover{
+        background-image:url(img/team/07.jpeg);
+      }
+    </style>
+  </head>
   
   <body>
 
@@ -81,6 +109,8 @@
                 </html></h2>
               <p>Nós reunimos desenvolvedores freelancers com domínio em diferentes tecnologias em único lugar!</p>
               <div class="header-button">
+                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border-filled">Participe Agora</a>
+                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border page-scroll">Saber Mais</a>
               </div>
             </div>
           </div>
@@ -248,7 +278,6 @@
             <!-- End Fetatures -->
           </div>
            <!-- End Col -->
-
         </div>
         <!-- End Row -->
       </div>
@@ -306,8 +335,8 @@
           <!-- Start Col -->
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/01.jpg" class="img-fluid" alt="">
+              <div class="team-thumb" id="felipe">
+                <img src="img/team/none.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -319,7 +348,7 @@
                 </div> 
                 <div class="team-inner text-center">
                   <h5 class="team-title">Felipe Stefani</h5>
-                  <p>Lead Designer</p>
+                  <!-- <p>Lead Designer</p> -->
                 </div>
               </div>
             </div>
@@ -329,8 +358,8 @@
           <!-- Start Col -->
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/02.jpg" class="img-fluid" alt="">
+              <div class="team-thumb" id="jessica">
+                <img src="img/team/none.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -342,7 +371,7 @@
                 </div>
                 <div class="team-inner text-center">
                   <h5 class="team-title">Jéssica Vicentini</h5>
-                  <p>Front-end Developer</p>
+                  <!-- <p>Front-end Developer</p> -->
                 </div>
               </div>
             </div>
@@ -352,8 +381,8 @@
           <!-- Start Col -->
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/03.jpg" class="img-fluid" alt="">
+              <div class="team-thumb" id="santi">
+                <img src="img/team/none.png" class="img-fluid" alt="">
               </div>
 
               <div class="team-details">
@@ -365,7 +394,7 @@
                 </div>
                 <div class="team-inner text-center">
                   <h5 class="team-title">Matheus Santi</h5>
-                  <p>Content Writer</p>
+                  <!-- <p>Content Writer</p> -->
                 </div>
               </div>
             </div>
@@ -375,8 +404,8 @@
           <!-- Start Col -->
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <div class="team-thumb">
-                <img src="img/team/04.jpg" class="img-fluid" alt="">
+              <div class="team-thumb" id="mapelli">
+                <img src="img/team/none.png" class="img-fluid" alt="" id="mapelli">
               </div>
 
               <div class="team-details">
@@ -388,7 +417,7 @@
                 </div>
                 <div class="team-inner text-center">
                   <h5 class="team-title">Vinicius Mapelli</h5>
-                  <p>Support Engineer</p>
+                  <!-- <p>Support Engineer</p> -->
                 </div>
               </div>
             </div>
@@ -597,11 +626,55 @@
 
 
     <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
+    <a id="addClass" class="back-to-top">
       <i class="material-icons">
         chat
       </i>
-    </a> 
+    </a>
+    <div class="popup-box chat-popup" id="qnimate">
+        <div class="popup-head">
+          <div class="popup-head-left pull-left"><img src="img/rex.png" alt="iamgurdeeposahan"> Dev's
+            <div class="popup-head-right float-right">
+              <button data-widget="remove" id="removeClass" class="chat-header-button float-right" type="button"><i class="lni-close"></i></button>
+            </div>
+          </div>
+
+        </div>
+        <div class="popup-messages">
+          <div class="direct-chat-messages">
+            <!-- <div class="chat-box-single-line"> -->
+              <!-- <center><abbr class="timestamp">15 de Novembro de 2019</abbr></center> -->
+            <!-- </div> -->
+            <!-- <div class="direct-chat-msg doted-border"> -->
+              <!-- <div class="direct-chat-info clearfix">
+                <span class="direct-chat-name pull-left">Dev's</span>
+              </div>
+        
+              <img alt="message user image" src="img/rex.png" class="direct-chat-img">/.direct-chat-img -->
+              <div class="direct-chat-text">
+                Olá, em que podemos te ajudar?
+              </div>
+              <div class="direct-chat-info clearfix">
+                <span class="direct-chat-timestamp float-right" style="color:black">15:15</span>
+              </div>
+              <!-- <div class="direct-chat-info clearfix">
+                <span class="direct-chat-img-reply-small pull-left">
+                </span>
+                <span class="direct-chat-reply-name">Singh</span>
+              </div>         -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="popup-messages-footer">
+          <textarea id="status_message" placeholder="Escreva sua mensagem" rows="10" cols="40" name="message"></textarea>
+          <div class="btn-footer">
+              <button class="bg_none"><i class="lni-play"></i></button>
+              <button class="bg_none"><i class="lni-gallery"></i></button>
+              <button class="bg_none"><i class="lni-files"></i></button>
+              <button class="bg_none float-right"><i class="lni-chevron-right-circle"></i></button>
+          </div>
+        </div>
+      </div>
 
     <!-- Preloader -->
     <div id="preloader">
@@ -622,6 +695,17 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
+    <script>
+        $(function(){
+          $("#addClass").click(function () {
+            $('#qnimate').addClass('popup-box-on');
+              });
+          
+            $("#removeClass").click(function () {
+          $('#qnimate').removeClass('popup-box-on');
+            });
+       })
+  </script>
     
   </body>
 </html>
