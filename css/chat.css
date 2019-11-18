@@ -115,6 +115,7 @@ body{
     background: linear-gradient(to right, #5339fe , #28D2F6);
     height: 275px;
     overflow: auto;
+    border-radius: 15px;
 }
 .direct-chat-messages {
     overflow: auto;
@@ -288,16 +289,17 @@ body{
 }
 .popup-messages .direct-chat-text {
     background: #dfece7 none repeat scroll 0 0;
-    border: 1px solid #dfece7;
-    border-radius: 2px;
+    /* border: 1px solid #dfece7; */
+    border-radius: 10px;
     color: #1f2121;
 }
 .direct-chat-text {
     background: #d2d6de none repeat scroll 0 0;
-    border: 1px solid #d2d6de;
-    border-radius: 5px;
+    /* border: 1px solid #d2d6de; */
+    border-radius: 10px;
     color: #444;
-    margin: 5px 0 0 50px;
-    padding: 5px 10px;
+    margin: 5px 0 0 5px;
+    padding: 5px 5px;
     position: relative;
+    width: 79%;
 }
